@@ -61,12 +61,22 @@ function slotHTML(id, type, start, end) {
   var slotReference = 'Slot/' + id,
       prettyStart = new Date(start),
       prettyEnd = new Date(end);
-
+/*
   return "<div class='card'>" +
            "<div class='card-body'>" +
              "<h5 class='card-title'>" + type + '</h5>' +
              "<p class='card-text'>Start: " + prettyStart + '</p>' +
              "<p class='card-text'>End: " + prettyEnd + '</p>' +
+           '</div>' +
+         '</div>';
+*/
+  return "<div class='card'>" +
+           "<div class='card-body'>" +
+             "<h5 class='card-title'>" + type + '</h5>' +
+             "<p class='card-text'>Start: " + prettyStart + '</p>' +
+             "<p class='card-text'>End: " + prettyEnd + '</p>' +
+             "<a href='javascript:void(0);' class='card-link' onclick='appointmentCreate(\"" +
+               slotReference + "\", \"Patient/12508016\");'>Book</a>" +
            '</div>' +
          '</div>';
 }
