@@ -112,7 +112,8 @@ function slotHTML(id, type, start, end) {
   var slotReference = 'Slot/' + id,
       prettyStart = new Date(start),
       prettyEnd = new Date(end);
-/*
+
+  /*
   return "<div class='card'>" +
            "<div class='card-body'>" +
              "<h5 class='card-title'>" + type + '</h5>' +
@@ -121,6 +122,7 @@ function slotHTML(id, type, start, end) {
            '</div>' +
          '</div>';
 */
+
   return "<div class='card'>" +
            "<div class='card-body'>" +
              "<h5 class='card-title'>" + type + '</h5>' +
@@ -131,6 +133,7 @@ function slotHTML(id, type, start, end) {
            '</div>' +
          '</div>';
 }
+
 
 function renderSlots(slotsHTML) {
   clearUI();
